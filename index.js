@@ -13,6 +13,7 @@ const get_instrumentos = async () =>{
             contenedor.innerHTML = "";
             
         });
+        // setimeout contenedor.scrollinte (espara que haga foco en las carta que trae)
          setTimeout(() => {
            contenedor.scrollIntoView({ behavior: 'smooth' });
             }, 100); 
@@ -207,13 +208,13 @@ const get_origenQuery = async () =>{
         }
         instrumentos.forEach(elem =>{
             dibujarCarta(elem.id)
+            contenedor.innerHTML = "";  
         })
         
         setTimeout(() => {
            contenedor.scrollIntoView({ behavior: 'smooth' });
             }, 100); 
 
-        contenedor.innerHTML = "";  
         
     } catch (error) {
         console.log(error);
