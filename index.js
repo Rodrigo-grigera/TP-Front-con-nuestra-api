@@ -10,14 +10,13 @@ const get_instrumentos = async () =>{
         const instrumentos = await respo.json();
         instrumentos.forEach(element => {
             dibujarCarta(element.id);
+            contenedor.innerHTML = "";
             
-            // document.getElementById("contenedor-carta").scrollIntoView({ behavior: 'smooth' });
         });
          setTimeout(() => {
            contenedor.scrollIntoView({ behavior: 'smooth' });
             }, 100); 
 
-        contenedor.innerHTML = "";
         
     } catch (error) {
         console.log(error);
@@ -127,12 +126,12 @@ const get_tipoInstru = async () =>{
         }
         instrumentos.forEach(element => {
             dibujarCarta(element.id)
+            contenedor.innerHTML = "";
         });
         setTimeout(() => {
            contenedor.scrollIntoView({ behavior: 'smooth' });
             }, 100); 
 
-        contenedor.innerHTML = "";
     }catch (error){
         console.error("Error");
         
