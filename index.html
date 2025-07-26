@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trabajo Practico</title>
+</head>
+<body>
+    <main>
+        <header class="cont-titulo">
+            <div class="div-titulo">
+            
+                    <h1>Instrumentos en Venta</h1>
+                    <p>Busca tus Intrumentos aqui ... </p>
+                    
+            </div>
+        </header>
+
+        <section class="sect-input">
+            <article class="art-input">
+                <div class="conte-input">
+                    
+                    <h2>¿Que instrumento buscas?</h2>
+                    
+                    <label>Instrumentos</label>
+                    <select  id="todos_instrumentos">
+                        <option value="" >-- Select --</option>
+                        <option value="todos" >Todos los instrumentos</option>
+                    </select>
+
+                    
+
+                        <label>Nombre instrumento</label>
+                        <input type="text" placeholder="ej: bateria, guitarra, etc" id="nombre">
+                        <button id="buscar">Buscar</button>
+                    
+                    
+
+                <label >Tipo de instrumento</label>
+                <select  id="sele-tipo">
+                    <option value="">-- Select --</option>
+                    <option value="cuerda">Cuerda</option>
+                    <option value="teclado">Teclado</option>
+                    <option value="viento">Viento</option>
+                    <option value="percusion">Percusion</option>
+                </select>
+
+                  <label >Origen de instrumento</label>
+                  <input type="text" placeholder="ej: Francia, España, etc" id="origen">
+                  <div>
+                      <button id="buscar-origen">Buscar</button>
+                      <button id="eliminar">Limpiar busqueda</button>
+                  </div>
+        </article>
+    </section>
+    
+    
+    
+        <article id="contenedor-carta" class="art-cart">
+            
+        </article>
+
+        <section>
+            <dialog id="modal" >
+                <button id="cerrar" style="color:red">X</button>
+                <div id="modal-body" class="div-dialog"></div>
+            </dialog>
+        </section>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+body{
+    background-image: url("https://ortizo.com.co/cdn/shop/articles/INSTRUMENTOS.jpg?v=1736287757&width=1920");
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   
+}
+
+.cont-titulo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.div-titulo{
+    max-width: 400px;
+}
+.div-titulo h1{
+    background-color:rgba(240, 248, 255, 0.726);
+    border-radius: 20px;
+    padding: 10px;
+}
+.div-titulo p{
+    background-color:rgba(240, 248, 255, 0.644);
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+button:hover, select:hover{
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.carta{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: end;
+    width: 250px;
+    align-items: anchor-center;
+    padding: 15px 0px 15px 0px;
+    background-color: rgba(255, 255, 238, 0.664);
+    box-shadow: 0 8px 16px rgba(12, 12, 12, 0.719);
+    border-radius: 90px;
+}
+
+.div-dialog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    margin: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+#modal{
+    border: none;
+    box-shadow: 0 8px 16px rgb(12, 12, 12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #0000004a;
+}
+.carta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px   rgba(0, 0, 0, 0.089);
+}
+
+ span{
+    color:rgb(31, 128, 128);
+    font-size: large;
+}
+
+.carta img{
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    margin: 10px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.959);
+
+}
+.art-cart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.conte-input{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 10px;    
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(197, 169, 169, 0.767);
+    box-shadow: 0 8px 16px rgba(12, 12, 12, 0.719);
+    
+}
+.conte-input:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+.conte-input input, select{
+    height: 30px;
+    border-radius: 10px;
+}
+
+.conte-input button{
+    border-radius: 20px;
+    width: 145px;
+    height: 35px;
+
+}
+.conte-input h2{
+    padding-left: 10px;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgb(0 0 0 / 69%);
+    background-color: darkcyan;
+    border-radius: 20px;
+}
+.art-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
